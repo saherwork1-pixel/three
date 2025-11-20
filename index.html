@@ -10,15 +10,15 @@
 
     .scroll-container {
         position: relative;
-        width: 2268px;
-        height: 1300px;
+        width: 100vw;
+        height: 100vh;
         overflow: hidden;
     }
 
     .scroll-image {
         position: absolute;
         width: 100%;
-        animation: scroll-up 18s linear infinite;
+        animation: scroll-up 15s linear infinite;
     }
 
     @keyframes scroll-up {
@@ -26,7 +26,7 @@
             top: 100%;
         }
         100% {
-            top: -100%;
+            top: 100%;
         }
     }
 </style>
