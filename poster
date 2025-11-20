@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden; /* Hide scrollbars */
+        background: #000; /* Optional */
+    }
+
+    .scroll-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .scroll-image {
+        position: absolute;
+        width: 100%;
+        animation: scroll-up 12s linear infinite;
+    }
+
+    @keyframes scroll-up {
+        0% {
+            top: 100%;
+        }
+        100% {
+            top: -100%;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="scroll-container">
+    <img src="Innovation Poster Nawaf.png" class="scroll-image">
+</div>
+
+</body>
+</html>
