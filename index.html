@@ -15,18 +15,25 @@
         overflow: hidden;
     }
 
-    .scroll-image {
+    .scroll-track {
         position: absolute;
         width: 100%;
+        height: 200%; /* Double height to fit 2 images */
         animation: scroll-up 25s linear infinite;
+    }
+
+    .scroll-track img {
+        display: block;
+        width: 100%;
+        height: 50%; /* Each image takes half of the track */
     }
 
     @keyframes scroll-up {
         0% {
-            top: 100%;
+            top: 0;
         }
         100% {
-            top: -100%;
+            top: -50%; /* Move up by one image height */
         }
     }
 </style>
@@ -35,9 +42,11 @@
 <body>
 
 <div class="scroll-container">
-    <img src="Nawaf.png" class="scroll-image">
+    <div class="scroll-track">
+        <img src="Nawaf.png" alt="">
+        <img src="Nawaf.png" alt="">
+    </div>
 </div>
 
 </body>
 </html>
-
